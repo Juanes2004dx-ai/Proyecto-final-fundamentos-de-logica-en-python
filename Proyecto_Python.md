@@ -1,5 +1,5 @@
 # Proyecto-final-fundamentos-de-logica-en-python
-Trabajo final de todo lo enseñando en la materia durante los 3 meses que dure esta 
+# Trabajo final de todo lo enseñando en la materia durante los 3 meses que dure esta 
 # Caso 2 - SPA Móvil para mascotas
 
 mascotas=[]
@@ -9,14 +9,14 @@ print("---------------------------------------")
 cantidad_mascotas = int(input("¿Cuantas mascotas deseas atender el dia de hoy?: "))
 total_recaudado = 0
 TEXTO = "escriba el número de la opción que deseas: "
-#Como este mensaje se repite varias veces se usa un def para que solo sea llamar este funcion
+# Como este mensaje se repite varias veces se usa un def para que solo sea llamar este funcion
 def imprimir_pociones(opcion_a, opcion_b):
     print("¿Que opcion deseas elegir?")
     print(f"Opcion 1. {opcion_a}")
     print(f"Opcion 2. {opcion_b}")
     print("--------------------------")
 
-#Esta parte sirve para aumentar el número de las mascotas dependiendo de la cantidad de mascotas que el usuario coloque
+# Esta parte sirve para aumentar el número de las mascotas dependiendo de la cantidad de mascotas que el usuario coloque
 for i in range(cantidad_mascotas):
     i += 1
     print("---------------------")
@@ -57,7 +57,7 @@ for i in range(cantidad_mascotas):
         adicional = "Limpieza de Oídos"
         precio_adicional = int(5000)
     total = precio_banio + precio_adicional
-#Aqui se guardan los diferentes elemento que se han recopilado durante el codigo anterior y estos se guardaran en la lista Mascotas
+# Aqui se guardan los diferentes elemento que se han recopilado durante el codigo anterior y estos se guardaran en la lista Mascotas
     mascota = {
                 "nombre": nombre,
                 "tipo": tipo,
@@ -71,7 +71,7 @@ for i in range(cantidad_mascotas):
     print("Mascota registrada correctamente.")
     print(f"Total a pagar: ${total} COP")
     print("---------------------------------")
-#Una vez que se llenen los datos de la última mascota, aquí se mostraran cuantas mascotas ingreso el usuario y el valor total de los servicios brindados
+# Una vez que se llenen los datos de la última mascota, aquí se mostraran cuantas mascotas ingreso el usuario y el valor total de los servicios brindados
 print("-------------------------------------------------")
 print(f"Total de mascotas atendidas: {cantidad_mascotas}")
 print(f"Total recaudado: ${total_recaudado} COP")
